@@ -1,6 +1,6 @@
 # SafeDocket interactive demo
 
-https://derrickbaruga7.github.io/conform-demo/
+https://derrickbaruga7.github.io/safedocket/
 
 A public, browser-only preview with fictional clients and sample PDFs. No login, backend, analytics, or connection to the shared workspace. Changes stay in browser storage and can be reset.
 
