@@ -1,4 +1,4 @@
-# Conform interactive demo
+# SafeDocket interactive demo
 
 https://derrickbaruga7.github.io/conform-demo/
 
