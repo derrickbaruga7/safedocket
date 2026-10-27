@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Try Conform with fictional clients, sample documents and interactive reviews. No login required.">
+  <title>Conform | Interactive demo</title>
+  <link rel="icon" type="image/svg+xml" href="./brand/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="auth-gate" class="auth-gate"><section class="auth-card"><span class="brand"><img src="./brand/fairdocket-logo.svg" alt="Fairdocket" width="230" height="44"></span><h1>Opening your workspace…</h1><p>Checking your secure session.</p></section></div>
+<div class="app" hidden>
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#overview" aria-label="Fairdocket home"><img src="./brand/fairdocket-logo-light.svg" alt="Fairdocket" width="174" height="34"></a>
+    <div class="workspace"><span class="org-avatar" id="org-initial">N</span><div><strong id="org-name">Northstar Labs</strong><small>Company workspace</small></div><span class="workspace-chevron">⌄</span></div>
+    <div class="nav-label">YOUR WORK</div>
+    <nav id="nav"></nav>
+    <div class="sidebar-bottom"><button class="view-context" data-do="experience.edit" id="view-context"></button><div class="profile"><span class="avatar avocado">✓</span><div><strong id="actor-name">Workspace owner</strong><small>Workspace account</small></div></div><button id="sign-out" class="text-link" hidden>Sign out</button></div>
+  </aside>
+  <div class="main-shell"><aside class="demo-ribbon" aria-label="Demo information"><div><strong>Conform · Interactive demo</strong><p>No login. Fictional records. Your changes stay in this browser.</p></div><div class="demo-actions"><a href="./samples/">Sample PDFs</a><button id="demo-reset" type="button">Reset demo</button></div></aside>
+    <header class="topbar"><div class="breadcrumb"><button class="icon-button menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar" id="menu-toggle"></button><strong id="crumb">Today</strong></div><div class="topbar-end"><button class="role-switch" data-do="experience.edit" id="role-switch">Choose work view</button><button class="alerts-button" data-do="alerts.open" id="alerts-button" aria-label="Open alerts"></button></div></header>
+    <main id="main" tabindex="-1"><div class="loading-workspace"><span class="loading-ring"></span><h1>Opening your workspace…</h1><p>Checking your latest updates.</p></div></main>
+    <footer class="page-footer"><button class="text-link environment-label" data-page="brief">Demo workspace</button><span>Changes saved <span>·</span><button class="text-link" data-page="brief">Workspace settings</button></span></footer>
+  </div>
+</div>
+<dialog id="detail" class="detail-dialog" aria-labelledby="detail-title"></dialog>
+<dialog id="form-dialog" class="form-dialog" aria-labelledby="form-title"></dialog>
+<div class="toast" id="toast" role="status"></div>
+<dialog id="demo-reset-dialog" aria-labelledby="demo-reset-title"><h2 id="demo-reset-title">Reset your demo?</h2><p>This clears only the changes you made in this demo browser and restores the fictional examples.</p><div class="demo-actions"><button id="demo-reset-cancel">Keep exploring</button><button id="demo-reset-confirm">Reset examples</button></div></dialog><script type="module" src="./demo.js"></script>
+</body></html>
