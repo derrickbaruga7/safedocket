@@ -1,7 +1,7 @@
 /* SafeDocket: readable, action-focused product UI. Keep type at 14px or larger. */
 :root {
   color-scheme: light;
-  --paper: #f4f6f9;
+  --paper: #ffffff;
   --surface: #fff;
   --rail: #fff;
   --ink: #172b4d;
